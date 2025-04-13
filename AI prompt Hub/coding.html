@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coding & Tech AI - AI Prompt Hub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&family=Montserrat:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        function copyToClipboard(button) {
+            const promptText = button.parentElement.nextElementSibling.querySelector('p').innerText;
+            navigator.clipboard.writeText(promptText);
+            
+            // Change button text temporarily
+            button.innerHTML = 'Copied!';
+            setTimeout(() => {
+                button.innerHTML = 'Copy Prompt';
+            }, 2000);
+        }
+    </script>
+</head>
+<body style="margin:0;font-family:'Poppins',sans-serif;background:#f8f9fa;">
+    <!-- Coding Header -->
+    <header style="background:linear-gradient(135deg,#1a1a2e 0%,#00ff9d 100%);padding:15px 0;box-shadow:0 4px 12px rgba(0,0,0,0.1);position:fixed;width:100%;top:0;z-index:1000;">
+        <div style="width:90%;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;align-items:center;">
+            <div style="display:flex;align-items:center;gap:10px;">
+                <div style="width:40px;height:40px;background:#fff;border-radius:10px;display:flex;align-items:center;justify-content:center;color:#1a1a2e;font-size:20px;font-weight:bold;"><i class="fas fa-code"></i></div>
+                <h1 style="margin:0;color:#fff;font-size:24px;font-family:'Montserrat',sans-serif;">AI PROMPT <span style="color:#00ff9d;">HUB</span></h1>
+            </div>
+            <nav>
+                <ul style="display:flex;list-style:none;gap:25px;margin:0;">
+                    <li><a href="index.html" style="color:#fff;font-weight:600;text-decoration:none;position:relative;padding-bottom:5px;">Home</a></li>
+                    <li><a href="index.html#categories" style="color:#fff;font-weight:600;text-decoration:none;position:relative;padding-bottom:5px;">Categories</a></li>
+                    <li><a href="index.html#trending" style="color:#fff;font-weight:600;text-decoration:none;position:relative;padding-bottom:5px;">Trending</a></li>
+                    <li><a href="index.html#contact" style="color:#fff;font-weight:600;text-decoration:none;position:relative;padding-bottom:5px;">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Coding Hero -->
+    <section style="background:linear-gradient(rgba(26,26,46,0.8), rgba(0,255,157,0.8)), url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80') center/cover;color:#fff;padding:180px 0 100px;text-align:center;">
+        <div style="width:90%;max-width:800px;margin:0 auto;">
+            <h1 style="font-size:48px;margin-bottom:20px;font-family:'Playfair Display',serif;">Coding & Tech AI</h1>
+            <p style="font-size:20px;margin-bottom:40px;opacity:0.9;">Supercharge your development workflow with AI-powered coding assistance</p>
+            <a href="#tools" style="display:inline-block;background:#fff;color:#1a1a2e;padding:15px 30px;border-radius:50px;font-weight:600;text-decoration:none;font-size:18px;box-shadow:0 4px 15px rgba(0,0,0,0.1);transition:all 0.3s ease;">Explore Tools</a>
+        </div>
+    </section>
+
+    <!-- Introduction -->
+    <section style="padding:80px 0;background:#fff;">
+        <div style="width:90%;max-width:1200px;margin:0 auto;text-align:center;">
+            <h2 style="font-size:36px;margin-bottom:20px;color:#2d3748;">AI for Developers</h2>
+            <p style="font-size:18px;color:#4a5568;max-width:800px;margin:0 auto;line-height:1.7;">Artificial intelligence is revolutionizing software development by automating repetitive tasks, suggesting code improvements, and helping debug complex issues. Discover how to integrate AI into your development workflow to write better code faster.</p>
+        </div>
+    </section>
+
+    <!-- Top AI Tools -->
+    <section id="tools" style="padding:60px 0;background:#f8f9fa;">
+        <div style="width:90%;max-width:1200px;margin:0 auto;">
+            <h2 style="text-align:center;font-size:36px;margin-bottom:15px;color:#2d3748;">Top AI Tools for Coding</h2>
+            <p style="text-align:center;font-size:18px;color:#718096;max-width:700px;margin:0 auto 50px;">These AI-powered development tools are changing how we write software</p>
+            
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:30px;">
+                <!-- Tool 1 -->
+                <div style="background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.05);transition:transform 0.3s ease;">
+                    <div style="height:200px;background:url('https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80') center/cover;"></div>
+                    <div style="padding:25px;text-align:center;">
+                        <div style="width:60px;height:60px;background:linear-gradient(135deg,#1a1a2e 0%,#00ff9d 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:-50px auto 20px;color:#fff;font-size:24px;">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3 style="font-size:22px;margin-bottom:15px;color:#2d3748;">GitHub Copilot</h3>
+                        <p style="color:#718096;margin-bottom:20px;">AI pair programmer that suggests code and entire functions in real-time right from your editor.</p>
+                        <a href="https://github.com/features/copilot" target="_blank" style="color:#1a1a2e;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:5px;">Visit Website <span style="font-size:18px;">→</span></a>
+                    </div>
+                </div>
+                
+                <!-- Tool 2 -->
+                <div style="background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.05);transition:transform 0.3s ease;">
+                    <div style="height:200px;background:url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1085&q=80') center/cover;"></div>
+                    <div style="padding:25px;text-align:center;">
+                        <div style="width:60px;height:60px;background:linear-gradient(135deg,#1a1a2e 0%,#00ff9d 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:-50px auto 20px;color:#fff;font-size:24px;">
+                            <i class="fas fa-terminal"></i>
+                        </div>
+                        <h3 style="font-size:22px;margin-bottom:15px;color:#2d3748;">Amazon CodeWhisperer</h3>
+                        <p style="color:#718096;margin-bottom:20px;">ML-powered coding companion that generates real-time single-line or full-function code suggestions.</p>
+                        <a href="https://aws.amazon.com/codewhisperer/" target="_blank" style="color:#1a1a2e;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:5px;">Visit Website <span style="font-size:18px;">→</span></a>
+                    </div>
+                </div>
+                
+                <!-- Tool 3 -->
+                <div style="background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.05);transition:transform 0.3s ease;">
+                    <div style="height:200px;background:url('https://images.unsplash.com/photo-1624953587687-daf255b6b80a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80') center/cover;"></div>
+                    <div style="padding:25px;text-align:center;">
+                        <div style="width:60px;height:60px;background:linear-gradient(135deg,#1a1a2e 0%,#00ff9d 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;margin:-50px auto 20px;color:#fff;font-size:24px;">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <h3 style="font-size:22px;margin-bottom:15px;color:#2d3748;">Tabnine</h3>
+                        <p style="color:#718096;margin-bottom:20px;">AI assistant that predicts and suggests your next lines of code based on context and syntax.</p>
+                        <a href="https://www.tabnine.com/" target="_blank" style="color:#1a1a2e;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:5px;">Visit Website <span style="font-size:18px;">→</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Prompts Section -->
+    <section style="padding:80px 0;background:#fff;">
+        <div style="width:90%;max-width:1200px;margin:0 auto;">
+            <h2 style="text-align:center;font-size:36px;margin-bottom:15px;color:#2d3748;">Effective AI Prompts for Coding</h2>
+            <p style="text-align:center;font-size:18px;color:#718096;max-width:700px;margin:0 auto 50px;">Copy and paste these prompts into your favorite AI coding assistant</p>
+            
+            <!-- Code Generation Category -->
+            <div style="margin-bottom:60px;">
+                <h3 id="generation" style="font-size:28px;margin-bottom:30px;color:#2d3748;padding-bottom:10px;border-bottom:2px solid #e2e8f0;">Code Generation</h3>
+                
+                <!-- Prompt 1 -->
+                <div style="background:#f8f9fa;border-radius:12px;padding:25px;margin-bottom:25px;border-left:5px solid #1a1a2e;">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;">
+                        <h4 style="font-size:20px;margin:0;color:#2d3748;">Function Implementation</h4>
+                        <button onclick="copyToClipboard(this)" style="background:linear-gradient(135deg,#1a1a2e 0%,#00ff9d 100%);color:#fff;border:none;padding:8px 15px;border-radius:50px;font-size:14px;cursor:pointer;">Copy Prompt</button>
+                    </div>
+                    <div style="background:#fff;padding:20px;border-radius:8px;border:1px solid #e2e8f0;">
+                        <p style="margin:0;color:#4a5568;font-family:monospace;font-size:16px;">"Write a Python function that takes a list of numbers and returns a dictionary with the mean, median, mode, max, min, and standard deviation. Include docstrings and type hints. Make sure it handles edge cases like empty lists."</p>
+                    </div>
+                </div>
+                
+                <!-- Prompt 2 -->
+                <div style="background:#f8f9fa;border-radius:12px;padding:25px;margin-bottom:25px;border-left:5px solid #1a1a2e;">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;">
+                        <h4 style="font-size:20px;margin:0;color:#2d3748;">API Endpoint</h4>
+                        <button onclick="copyToClipboard(this)" style="background:linear-gradient(135deg,#1a1a2e 0%,#00ff9d 100%);color:#fff;border:none;padding:8px 15px;border-radius:50px;font-size:14px;cursor:pointer;">Copy Prompt</button>
+                    </div>
+                    <div style="background:#fff;padding:20px;border-radius:8px;border:1px solid #e2e8f0;">
+                        <p style="margin:0;color:#4a5568;font-family:monospace;font-size:16px;">"Create a REST API endpoint in Node.js using Express that handles user authentication. It should accept email and password, validate them against a MongoDB database, and return a JWT token if successful. Include proper error handling and input validation."</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Debugging Category -->
+            <div style="margin-bottom:60px;">
+                <h3 id="debugging" style="font-size:28px;margin-bottom:30px;color:#2d3748;padding-bottom:10px;border-bottom:2px solid #e2e8f0;">Debugging Assistance</h3>
+                
+                <!-- Prompt 3 -->
+                <div style="background:#f8f9fa;border-radius:12px;padding:25px;margin-bottom:25px;border-left:5px solid #00ff9d;">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;">
+                        <h4 style="font-size:20px;margin:0;color:#2d3748;">Error Analysis</h4>
+                        <button onclick="copyToClipboard(this)" style="background:linear-gradient(135deg,#1a1a2e 0%,#00ff9d 100%);color:#fff;border:none;padding:8px 15px;border-radius:50px;font-size:14px;cursor:pointer;">Copy Prompt</button>
+                    </div>
+                    <div style="background:#fff;padding:20px;border-radius:8px;border:1px solid #e2e8f0;">
+                        <p style="margin:0;color:#4a5568;font-family:monospace;font-size:16px;">"I'm getting this error in my React application: [paste error]. Here's the relevant code: [paste code]. Explain what's causing this error and suggest three different ways to fix it, ordered by best practice."</p>
+                    </div>
+                </div>
+                
+                <!-- Prompt 4 -->
+                <div style="background:#f8f9fa;border-radius:12px;padding:25px;margin-bottom:25px;border-left:5px solid #00ff9d;">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;">
+                        <h4 style="font-size:20px;margin:0;color:#2d3748;">Performance Optimization</h4>
+                        <button onclick="copyToClipboard(this)" style="background:linear-gradient(135deg,#1a1a2e 0%,#00ff9d 100%);color:#fff;border:none;padding:8px 15px;border-radius:50px;font-size:14px;cursor:pointer;">Copy Prompt</button>
+                    </div>
+                    <div style="background:#fff;padding:20px;border-radius:8px;border:1px solid #e2e8f0;">
+                        <p style="margin:0;color:#4a5568;font-family:monospace;font-size:16px;">"Analyze this SQL query for performance issues: [paste query]. Suggest specific optimizations including index recommendations, query restructuring, and caching strategies. Provide the optimized query and explain each improvement."</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Learning Category -->
+            <div style="margin-bottom:60px;">
+                <h3 id="learning" style="font-size:28px;margin-bottom:30px;color:#2d3748;padding-bottom:10px;border-bottom:2px solid #e2e8f0;">Learning & Documentation</h3>
+                
+                <!-- Prompt 5 -->
+                <div style="background:#f8f9fa;border-radius:12px;padding:25px;margin-bottom:25px;border-left:5px solid #00b894;">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;">
+                        <h4 style="font-size:20px;margin:0;color:#2d3748;">Concept Explanation</h4>
+                        <button onclick="copyToClipboard(this)" style="background:linear-gradient(135deg,#1a1a2e 0%,#00ff9d 100%);color:#fff;border:none;padding:8px 15px;border-radius:50px;font-size:14px;cursor:pointer;">Copy Prompt</button>
+                    </div>
+                    <div style="background:#fff;padding:20px;border-radius:8px;border:1px solid #e2e8f0;">
+                        <p style="margin:0;color:#4a5568;font-family:monospace;font-size:16px;">"Explain how React hooks work (especially useState and useEffect) as if I'm a beginner who knows basic JavaScript but is new to React. Provide simple code examples and compare with class components to show the differences."</p>
+                    </div>
+                </div>
+                
+                <!-- Prompt 6 -->
+                <div style="background:#f8f9fa;border-radius:12px;padding:25px;margin-bottom:25px;border-left:5px solid #00b894;">
+                    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:15px;">
+                        <h4 style="font-size:20px;margin:0;color:#2d3748;">Code Documentation</h4>
+                        <button onclick="copyToClipboard(this)" style="background:linear-gradient(135deg,#1a1a2e 0%,#00ff9d 100%);color:#fff;border:none;padding:8px 15px;border-radius:50px;font-size:14px;cursor:pointer;">Copy Prompt</button>
+                    </div>
+                    <div style="background:#fff;padding:20px;border-radius:8px;border:1px solid #e2e8f0;">
+                        <p style="margin:0;color:#4a5568;font-family:monospace;font-size:16px;">"Generate comprehensive documentation for this JavaScript function: [paste code]. Include a description of its purpose, parameters with types, return value, possible errors thrown, and a usage example. Format it in Markdown."</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Case Studies -->
+    <section style="padding:80px 0;background:linear-gradient(135deg,#f8f9fa 0%,#e2e8f0 100%);">
+        <div style="width:90%;max-width:1200px;margin:0 auto;">
+            <h2 style="text-align:center;font-size:36px;margin-bottom:15px;color:#2d3748;">Coding AI Case Studies</h2>
+            <p style="text-align:center;font-size:18px;color:#718096;max-width:700px;margin:0 auto 50px;">Real-world applications of AI in software development</p>
+            
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(300px, 1fr));gap:30px;">
+                <!-- Case 1 -->
+                <div style="background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.05);">
+                    <div style="height:200px;background:url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80') center/cover;"></div>
+                    <div style="padding:25px;">
+                        <div style="display:flex;align-items:center;gap:10px;margin-bottom:15px;">
+                            <div style="width:40px;height:40px;background:linear-gradient(135deg,#1a1a2e 0%,#00ff9d 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px;">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3 style="font-size:22px;margin:0;color:#2d3748;">GitHub Copilot</h3>
+                        </div>
+                        <p style="color:#718096;margin-bottom:20px;">How GitHub's AI pair programmer increased developer productivity by 55% and reduced boilerplate code by 75% in enterprise teams.</p>
+                        <a href="#" style="color:#1a1a2e;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:5px;">Read Case Study <span style="font-size:18px;">→</span></a>
+                    </div>
+                </div>
+                
+                <!-- Case 2 -->
+                <div style="background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.05);">
+                    <div style="height:200px;background:url('https://images.unsplash.com/photo-1629909613654-28e377c37b09?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1168&q=80') center/cover;"></div>
+                    <div style="padding:25px;">
+                        <div style="display:flex;align-items:center;gap:10px;margin-bottom:15px;">
+                            <div style="width:40px;height:40px;background:linear-gradient(135deg,#1a1a2e 0%,#00ff9d 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px;">
+                                <i class="fas fa-bug"></i>
+                            </div>
+                            <h3 style="font-size:22px;margin:0;color:#2d3748;">AI Debugging</h3>
+                        </div>
+                        <p style="color:#718096;margin-bottom:20px;">How AI-powered debugging tools reduced production incidents by 40% and cut debugging time in half for a Fortune 500 company.</p>
+                        <a href="#" style="color:#1a1a2e;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:5px;">Read Case Study <span style="font-size:18px;">→</span></a>
+                    </div>
+                </div>
+                
+                <!-- Case 3 -->
+                <div style="background:#fff;border-radius:15px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.05);">
+                    <div style="height:200px;background:url('https://images.unsplash.com/photo-1620712943543-bcc4688e7485?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1085&q=80') center/cover;"></div>
+                    <div style="padding:25px;">
+                        <div style="display:flex;align-items:center;gap:10px;margin-bottom:15px;">
+                            <div style="width:40px;height:40px;background:linear-gradient(135deg,#1a1a2e 0%,#00ff9d 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:18px;">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <h3 style="font-size:22px;margin:0;color:#2d3748;">Code Migration</h3>
+                        </div>
+                        <p style="color:#718096;margin-bottom:20px;">Automated migration of legacy Java code to Kotlin using AI tools, achieving 90% accuracy and saving 3000 developer hours.</p>
+                        <a href="#" style="color:#1a1a2e;font-weight:600;text-decoration:none;display:inline-flex;align-items:center;gap:5px;">Read Case Study <span style="font-size:18px;">→</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resources -->
+    <section style="padding:80px 0;background:#fff;">
+        <div style="width:90%;max-width:1200px;margin:0 auto;">
+            <h2 style="text-align:center;font-size:36px;margin-bottom:15px;color:#2d3748;">Additional Resources</h2>
+            <p style="text-align:center;font-size:18px;color:#718096;max-width:700px;margin:0 auto 50px;">Expand your knowledge with these coding AI resources</p>
+            
+            <div style="display:grid;grid-template-columns:repeat(auto-fit, minmax(250px, 1fr));gap:20px;">
+                <a href="#" style="background:#f8f9fa;border-radius:10px;padding:20px;text-decoration:none;display:flex;align-items:center;gap:15px;transition:all 0.3s ease;">
+                    <div style="width:50px;height:50px;background:linear-gradient(135deg,#1a1a2e 0%,#00ff9d 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px;flex-shrink:0;">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <span style="color:#2d3748;font-weight:600;">"AI for Developers" Guide</span>
+                </a>
+                
+                <a href="#" style="background:#f8f9fa;border-radius:10px;padding:20px;text-decoration:none;display:flex;align-items:center;gap:15px;transition:all 0.3s ease;">
+                    <div style="width:50px;height:50px;background:linear-gradient(135deg,#1a1a2e 0%,#00ff9d 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px;flex-shrink:0;">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <span style="color:#2d3748;font-weight:600;">AI Pair Programming</span>
+                </a>
+                
+                <a href="#" style="background:#f8f9fa;border-radius:10px;padding:20px;text-decoration:none;display:flex;align-items:center;gap:15px;transition:all 0.3s ease;">
+                    <div style="width:50px;height:50px;background:linear-gradient(135deg,#1a1a2e 0%,#00ff9d 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px;flex-shrink:0;">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <span style="color:#2d3748;font-weight:600;">Dev Productivity Report</span>
+                </a>
+                
+                <a href="#" style="background:#f8f9fa;border-radius:10px;padding:20px;text-decoration:none;display:flex;align-items:center;gap:15px;transition:all 0.3s ease;">
+                    <div style="width:50px;height:50px;background:linear-gradient(135deg,#1a1a2e 0%,#00ff9d 100%);border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:20px;flex-shrink:0;">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <span style="color:#2d3748;font-weight:600;">AI Coding Course</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer style="background:#2d3748;color:#fff;padding:60px 0 0;">
+        <div style="width:90%;max-width:1200px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));gap:40px;">
+            <div>
+                <div style="display:flex;align-items:center;gap:10px;margin-bottom:20px;">
+                    <div style="width:30px;height:30px;background:#00ff9d;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#1a1a2e;font-weight:bold;"><i class="fas fa-code"></i></div>
+                    <h3 style="margin:0;font-size:20px;">AI PROMPT HUB</h3>
+                </div>
+                <p style="color:#a0aec0;margin-bottom:20px;line-height:1.6;">Master coding AI tools and prompts to supercharge your development workflow.</p>
+                <div style="display:flex;gap:15px;">
+                    <a href="#" style="color:#a0aec0;font-size:20px;"><i class="fab fa-twitter"></i></a>
+                    <a href="#" style="color:#a0aec0;font-size:20px;"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" style="color:#a0aec0;font-size:20px;"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            
+            <div>
+                <h4 style="font-size:18px;margin-bottom:20px;color:#fff;">Coding Sections</h4>
+                <ul style="list-style:none;padding:0;margin:0;">
+                    <li style="margin-bottom:10px;"><a href="#generation" style="color:#a0aec0;text-decoration:none;">Code Generation</a></li>
+                    <li style="margin-bottom:10px;"><a href="#debugging" style="color:#a0aec0;text-decoration:none;">Debugging Assistance</a></li>
+                    <li style="margin-bottom:10px;"><a href="#learning" style="color:#a0aec0;text-decoration:none;">Learning Resources</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 style="font-size:18px;margin-bottom:20px;color:#fff;">Quick Links</h4>
+                <ul style="list-style:none;padding:0;margin:0;">
+                    <li style="margin-bottom:10px;"><a href="index.html" style="color:#a0aec0;text-decoration:none;">Home</a></li>
+                    <li style="margin-bottom:10px;"><a href="healthcare.html" style="color:#a0aec0;text-decoration:none;">Healthcare AI</a></li>
+                    <li style="margin-bottom:10px;"><a href="education.html" style="color:#a0aec0;text-decoration:none;">Education AI</a></li>
+                    <li style="margin-bottom:10px;"><a href="marketing.html" style="color:#a0aec0;text-decoration:none;">Marketing AI</a></li>
+                </ul>
+            </div>
+            
+            <div>
+                <h4 style="font-size:18px;margin-bottom:20px;color:#fff;">Contact Us</h4>
+                <p style="color:#a0aec0;margin-bottom:15px;display:flex;align-items:center;gap:10px;"><i class="fas fa-envelope"></i> coding@aiprompthub.com</p>
+                <p style="color:#a0aec0;margin-bottom:20px;display:flex;align-items:center>
+</html>

@@ -1,0 +1,75 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  color: #333;
+}
+
+/* Header with logo and title */
+header {
+  background: #1f1f2e;
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 50px;
+  margin-right: 15px;
+}
+
+.logo h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Category grid */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  padding: 40px;
+}
+
+.category {
+  text-decoration: none;
+  color: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.category:hover {
+  transform: scale(1.05);
+}
+
+.category img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.category h2 {
+  padding: 15px;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/* Unique category colors */
+.healthcare { background-color: #ff6b6b; }
+.education { background-color: #4ecdc4; }
+.jobs { background-color: #5f27cd; }
+.cooking { background-color: #ff9f43; }
+.fitness { background-color: #10ac84; }
+.finance { background-color: #576574; }
+.travel { background-color: #48dbfb; }
+.design { background-color: #f368e0; }
